@@ -34,7 +34,7 @@ def buyLotsOfFruit(orderList):
     """
     totalCost = 0.0
     "*** YOUR CODE HERE ***"
-    return totalCost
+    return sum(fruitPrices[fruit] * numPounds for fruit, numPounds in orderList)
 
 # Main Method
 if __name__ == '__main__':
